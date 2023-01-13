@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/scripts.js"></script>
+  </head>
+<body>
+
+  <h1>Triangle Tracker</h1>
+  <h2>Enter in 3 lengths in the boxes below to build your triangle!</h2>
+  <p><em>Be sure to enter a number in all fields</em></p>
+  <form id="results">
+    <p id="error-message" class="hidden">Please enter a number for each side of your triangle.</p>
+    <label for="side1">Side 1</label>
+    <input id="side1" type="number" name="side1Input">
+    <label for="side2">Side 2</label>
+    <input id="side2" type="number">
+    <label for="side3">Side 3</label>
+    <input id="side3" type="number">
+    <button type="submit">Tell me about my Triangle</button>
+  </form>
+
+  <div id="equilateral" class="hidden">
+    <h1>You have an equilateral triangle!</h1>
+    <p>An equilateral triangle has three sides of equal length.</p>
+  </div>
+  <div id="isosceles" class="hidden">
+    <h1>You have an isosceles triangle!</h1>
+    <p>An isosceles triangle has two sides of equal length.</p>
+  </div>
+  <div id="scalene" class="hidden">
+    <h1>You have an scalene triangle!</h1>
+    <p>An scalene triangle has three sides of different lengths.</p>
+  </div>
+
+</body>
+</html>
